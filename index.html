@@ -1,79 +1,108 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-  <title>壁紙ガチャ</title>
-  <style>
-    body {
-      text-align: center;
-      font-family: sans-serif;
-      background-color: #f0f0f0;
-    }
-    img {
-      max-width: 90%%;
-      margin-top: 30px;
-      border-radius: 12px;
-    }
-    button {
-      padding: 12px 24px;
-      font-size: 20px;
-      background-color: #5a9;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #48a;
-    }
-    .download-btn {
-      display: inline-block;
-      margin-top: 15px;
-    }
-    .download-btn button {
-      background-color: #777;
-    }
-    .download-btn button:hover {
-      background-color: #555;
-    }
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 12.0px 'Hiragino Sans'; font-kerning: none}
   </style>
 </head>
 <body>
-  <h1>壁紙ガチャ</h1>
-  <button onclick="showRandomImage()">ガチャを引く！</button>
-  <div id="result"></div>
-
-  <script>
-    const images = [
-      "images/wallpaper1.jpg",
-      "images/wallpaper2.jpg",
-      "images/wallpaper3.jpg"
-    ];
-
-    function showRandomImage() {
-      const randomIndex = Math.floor(Math.random() * images.length);
-      const selectedImage = images[randomIndex];
-
-      const resultDiv = document.getElementById("result");
-      resultDiv.innerHTML = "";
-
-      const img = document.createElement("img");
-      img.src = selectedImage;
-      img.id = "gacha-image";
-      resultDiv.appendChild(img);
-
-      const downloadLink = document.createElement("a");
-      downloadLink.href = selectedImage;
-      downloadLink.download = "";
-      downloadLink.className = "download-btn";
-
-      const button = document.createElement("button");
-      button.textContent = "この画像を保存";
-      downloadLink.appendChild(button);
-
-      resultDiv.appendChild(document.createElement("br"));
-      resultDiv.appendChild(document.createElement("br"));
-      resultDiv.appendChild(downloadLink);
-    }
-  </script>
+<p class="p1"><span class="s1">&lt;&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;</span><span class="s2">壁紙ガチャ</span><span class="s1">&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family: sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #f0f0f0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>img {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>max-width: 90%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>button {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 12px 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #5a9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>button:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #48a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.download-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: inline-block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.download-btn button {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #777;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.download-btn button:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #555;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h1&gt;</span><span class="s2">壁紙ガチャ</span><span class="s1">&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button onclick="showRandomImage()"&gt;</span><span class="s2">ガチャを引く！</span><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="result"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const images = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"images/wallpaper1.jpg",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"images/wallpaper2.jpg",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"images/wallpaper3.jpg"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>function showRandomImage() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const today = new Date().toDateString();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const lastPlayed = localStorage.getItem("lastPlayed");</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if (lastPlayed === today) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>alert("今日はもう引いてるよ！また明日ね！");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const randomIndex = Math.floor(Math.random() * images.length);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const selectedImage = images[randomIndex];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const resultDiv = document.getElementById("result");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>resultDiv.innerHTML = "";</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const img = document.createElement("img");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>img.src = selectedImage;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>img.id = "gacha-image";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>resultDiv.appendChild(img);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const downloadLink = document.createElement("a");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>downloadLink.href = selectedImage;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>downloadLink.download = "";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>downloadLink.className = "download-btn";</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const button = document.createElement("button");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>button.textContent = "この画像を保存";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>downloadLink.appendChild(button);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>resultDiv.appendChild(document.createElement("br"));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>resultDiv.appendChild(document.createElement("br"));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>resultDiv.appendChild(downloadLink);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// 今日の日付を保存して制限する</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>localStorage.setItem("lastPlayed", today);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
 </html>
